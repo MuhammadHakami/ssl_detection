@@ -18,7 +18,7 @@ DATASET=coco_train2017.1@10
 UNLABELED_DATASET=${DATASET}-unlabeled
 CKPT_PATH=result/${DATASET}
 PSEUDO_PATH=${CKPT_PATH}/PSEUDO_DATA
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=0
 
 . scripts/coco/train_stg1.sh
 . scripts/coco/eval_stg1.sh
